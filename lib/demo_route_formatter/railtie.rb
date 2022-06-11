@@ -7,7 +7,7 @@ module DemoRouteFormatter
   class Railtie < Rails::Railtie
     railtie_name :demo_route_formatter
 
-    ActionDispatch::Routing::ConsoleFormatter.register_formatter(EmojiFormatter)
+    ActionDispatch::Routing::ConsoleFormatter.register_formatter(EmojiFormatter, "emoji")
 
     rake_tasks do 
       path = File.expand_path(__dir__)

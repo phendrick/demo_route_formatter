@@ -18,15 +18,15 @@ class EmojiFormatter < ActionDispatch::Routing::ConsoleFormatter::Base
     end.map do |r|
       vemoji = case r[:verb]
       when "GET"
-        "🏃‍♀️"
+        "🐶"
       when "POST"
         "📬"
       when "PATCH"
-        "🙈"
+        "🤡"
       when "PUT"
         "🧯"
       when "DELETE"
-        "🙅🏽‍♀️"
+        "🙈"
       else
         "🦁"
       end
